@@ -3,7 +3,12 @@ import torch as t
 from torch.nn import Parameter
 import torch.nn.functional as F
 import numpy as np
-import model
+
+
+"""
+This file contains snippets whcih were used during development.
+The code here is not needed/integrated in any way for any functionality of the final model.
+"""
 
 
 def test_embedding_unk():

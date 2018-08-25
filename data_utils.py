@@ -314,17 +314,3 @@ if __name__ == "__main__":
     print("main pf data_utils")
     b = BatchLoader([0], "validation")
     print(len(b.get_all_data()[0]))
-
-    l = [0, 1, 2]
-    random.shuffle(l)
-    print("l = {}".format(l))
-
-    #print(b.next_batch(2))
-    #for l1, l2 in b.next_batch(2):
-    #    print(l1)
-    #    print(l2)
-    """
-    for epoch in range(2):
-        for l in b.next_batch(5):
-            print("l = {}".format(l))
-    """
