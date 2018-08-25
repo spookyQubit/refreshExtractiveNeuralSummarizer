@@ -1,0 +1,127 @@
+25-08-2018:00:14:56,274 INFO     [main.py:28] 
+*** Config ***
+use_cuda : True
+out_channels : 50
+max_sent_length : 10
+learning_rate : 0.001
+max_doc_length : 10
+bidirectional : False
+num_sample_rollout : 10
+num_epochs : 20
+torch_manual_seed : 42
+kernel_widths : [1, 2, 3, 4, 5, 6, 7]
+preprocessed_data_dir : data/preprocessed-input-directory
+sentembedding_size : 350
+max_title_length : 0
+log_file : refresh.log
+rnn_layers : 1
+reinforcement : True
+wordembed_size : 200
+max_image_length : 0
+batch_size : 20
+pretrained_wordembedding : data/1-billion-word-language-modeling-benchmark-r13output.word2vec.vec
+target_label_size : 2
+data_mode : cnn
+class_weights : [5, 1]
+weighted_loss : True
+use_trained : False
+use_fp16 : False
+docembedding_size : 600
+train_dir : train_dir
+logger : Refresh
+
+
+25-08-2018:00:14:56,274 INFO     [main.py:66] Prepare vocab dict and read pretrained word embeddings ...
+25-08-2018:00:14:56,274 INFO     [data_utils.py:47] Reading pretrained word embeddings file: data/1-billion-word-language-modeling-benchmark-r13output.word2vec.vec
+25-08-2018:00:14:56,274 INFO     [data_utils.py:63] linecount = 0
+25-08-2018:00:15:05,222 INFO     [data_utils.py:63] linecount = 100000
+25-08-2018:00:15:14,862 INFO     [data_utils.py:63] linecount = 200000
+25-08-2018:00:15:25,245 INFO     [data_utils.py:63] linecount = 300000
+25-08-2018:00:15:33,973 INFO     [data_utils.py:63] linecount = 400000
+25-08-2018:00:15:42,373 INFO     [data_utils.py:63] linecount = 500000
+25-08-2018:00:15:47,233 INFO     [data_utils.py:65] Done reading pre-trained word embedding of shape (559183, 200)
+25-08-2018:00:15:47,234 INFO     [data_utils.py:67] Size of vocab: 559185 (_PAD:0, _UNK:1)
+25-08-2018:00:15:47,234 INFO     [data_utils.py:69] Writing vocab file: train_dir/vocab.txt
+25-08-2018:00:15:49,905 INFO     [data_utils.py:213] Data file prefix (.doc, .title, .image, .label.jp-org): data/preprocessed-input-directory/cnn.training
+25-08-2018:00:15:51,753 INFO     [data_utils.py:221] Preparing data per model requirement
+25-08-2018:00:15:51,753 INFO     [data_utils.py:278] 0 ...
+25-08-2018:00:15:53,600 INFO     [data_utils.py:278] 10000 ...
+25-08-2018:00:15:56,14 INFO     [data_utils.py:278] 20000 ...
+25-08-2018:00:15:58,217 INFO     [data_utils.py:278] 30000 ...
+25-08-2018:00:16:00,960 INFO     [data_utils.py:278] 40000 ...
+25-08-2018:00:16:03,545 INFO     [data_utils.py:278] 50000 ...
+25-08-2018:00:16:05,156 INFO     [data_utils.py:278] 60000 ...
+25-08-2018:00:16:07,387 INFO     [data_utils.py:278] 70000 ...
+25-08-2018:00:16:09,841 INFO     [data_utils.py:278] 80000 ...
+25-08-2018:00:16:11,295 INFO     [data_utils.py:278] 90000 ...
+25-08-2018:00:16:11,355 INFO     [data_utils.py:284] Read 90262 docs
+25-08-2018:00:16:11,402 INFO     [data_utils.py:179] Writing files with prefix (.doc, .title, .image, .label.jp-org): train_dir/cnn.training
+25-08-2018:00:16:24,796 INFO     [data_utils.py:213] Data file prefix (.doc, .title, .image, .label.jp-org): data/preprocessed-input-directory/cnn.validation
+25-08-2018:00:16:24,819 INFO     [data_utils.py:221] Preparing data per model requirement
+25-08-2018:00:16:24,819 INFO     [data_utils.py:278] 0 ...
+25-08-2018:00:16:25,87 INFO     [data_utils.py:284] Read 1220 docs
+25-08-2018:00:16:25,88 INFO     [data_utils.py:179] Writing files with prefix (.doc, .title, .image, .label.jp-org): train_dir/cnn.validation
+25-08-2018:00:16:44,101 INFO     [main.py:28] 
+*** Config ***
+num_epochs : 20
+data_mode : cnn
+bidirectional : False
+pretrained_wordembedding : data/1-billion-word-language-modeling-benchmark-r13output.word2vec.vec
+wordembed_size : 200
+docembedding_size : 600
+torch_manual_seed : 42
+rnn_layers : 1
+target_label_size : 2
+reinforcement : True
+max_title_length : 0
+batch_size : 20
+use_cuda : False
+weighted_loss : True
+learning_rate : 0.001
+log_file : refresh.log
+max_sent_length : 10
+logger : Refresh
+out_channels : 50
+train_dir : train_dir
+max_doc_length : 10
+use_fp16 : False
+kernel_widths : [1, 2, 3, 4, 5, 6, 7]
+sentembedding_size : 350
+num_sample_rollout : 10
+max_image_length : 0
+preprocessed_data_dir : data/preprocessed-input-directory
+class_weights : [5, 1]
+use_trained : False
+
+
+25-08-2018:00:16:44,121 INFO     [main.py:66] Prepare vocab dict and read pretrained word embeddings ...
+25-08-2018:00:16:44,121 INFO     [data_utils.py:47] Reading pretrained word embeddings file: data/1-billion-word-language-modeling-benchmark-r13output.word2vec.vec
+25-08-2018:00:16:44,122 INFO     [data_utils.py:63] linecount = 0
+25-08-2018:00:16:55,620 INFO     [data_utils.py:63] linecount = 100000
+25-08-2018:00:17:08,679 INFO     [data_utils.py:63] linecount = 200000
+25-08-2018:00:17:21,638 INFO     [data_utils.py:63] linecount = 300000
+25-08-2018:00:17:33,202 INFO     [data_utils.py:63] linecount = 400000
+25-08-2018:00:17:43,884 INFO     [data_utils.py:63] linecount = 500000
+25-08-2018:00:17:50,502 INFO     [data_utils.py:65] Done reading pre-trained word embedding of shape (559183, 200)
+25-08-2018:00:17:50,503 INFO     [data_utils.py:67] Size of vocab: 559185 (_PAD:0, _UNK:1)
+25-08-2018:00:17:50,518 INFO     [data_utils.py:69] Writing vocab file: train_dir/vocab.txt
+25-08-2018:00:17:53,384 INFO     [data_utils.py:213] Data file prefix (.doc, .title, .image, .label.jp-org): data/preprocessed-input-directory/cnn.training
+25-08-2018:00:17:55,474 INFO     [data_utils.py:221] Preparing data per model requirement
+25-08-2018:00:17:55,475 INFO     [data_utils.py:278] 0 ...
+25-08-2018:00:17:58,441 INFO     [data_utils.py:278] 10000 ...
+25-08-2018:00:18:01,836 INFO     [data_utils.py:278] 20000 ...
+25-08-2018:00:18:04,490 INFO     [data_utils.py:278] 30000 ...
+25-08-2018:00:18:07,264 INFO     [data_utils.py:278] 40000 ...
+25-08-2018:00:18:09,934 INFO     [data_utils.py:278] 50000 ...
+25-08-2018:00:18:11,940 INFO     [data_utils.py:278] 60000 ...
+25-08-2018:00:18:14,723 INFO     [data_utils.py:278] 70000 ...
+25-08-2018:00:18:18,13 INFO     [data_utils.py:278] 80000 ...
+25-08-2018:00:18:20,881 INFO     [data_utils.py:278] 90000 ...
+25-08-2018:00:18:20,970 INFO     [data_utils.py:284] Read 90262 docs
+25-08-2018:00:18:21,132 INFO     [data_utils.py:179] Writing files with prefix (.doc, .title, .image, .label.jp-org): train_dir/cnn.training
+25-08-2018:00:18:35,118 INFO     [data_utils.py:213] Data file prefix (.doc, .title, .image, .label.jp-org): data/preprocessed-input-directory/cnn.validation
+25-08-2018:00:18:35,140 INFO     [data_utils.py:221] Preparing data per model requirement
+25-08-2018:00:18:35,140 INFO     [data_utils.py:278] 0 ...
+25-08-2018:00:18:35,454 INFO     [data_utils.py:284] Read 1220 docs
+25-08-2018:00:18:35,455 INFO     [data_utils.py:179] Writing files with prefix (.doc, .title, .image, .label.jp-org): train_dir/cnn.validation
+25-08-2018:00:18:37,764 INFO     [main.py:90] Start time = 1535170717.764722
