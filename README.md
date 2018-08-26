@@ -11,5 +11,5 @@ Running the code: python main.py
 The nature of the sentence extraction task involves higly skewed class statistics since the number of positive lables indicating summary-worthy sentences is far less than non summary-worthy sentences. In order to tackle this imbalance, one can set the class_weights parameter in config.py.
 
 ### TODO
-[ ] Test data
-[ ] Embedding requires_grad=False except for UNK.
+- [ ] Test data
+- [ ] Embedding requires_grad=False except for UNK.
