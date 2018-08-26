@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
 
-with_rewards_dir = "./cleaning_log/with_rewards"
-without_rewards_dir = "./cleaning_log/without_rewards"
+with_rewards_dir = "../cleaning_log/with_rewards"
+without_rewards_dir = "../cleaning_log/without_rewards"
 files = ["accuracy", "loss", "precision", "recall"]
+
+
+fig, axarr = plt.subplots(2, 2)
 
 
 # loss
@@ -65,5 +68,5 @@ axes = plt.gca()
 axes.set_ylim([0, 1])
 plt.title('Recall')
 
-
+fig.suptitle("Training metric with (blue) and without (orange) reinforcement", fontsize=16)
 plt.show()
