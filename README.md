@@ -14,7 +14,7 @@ AMI: Deep Learning AMI (Ubuntu) Version 9.0.
 Env: pytorch_p36 (source activate pytorch_p36)
 ```
 
-The nature of the sentence extraction task involves higly skewed class statistics since the number of positive lables indicating summary-worthy sentences is far less than non summary-worthy sentences. In order to tackle this imbalance, one can set the class_weights parameter in config.py.
+The nature of the sentence extraction task involves higly skewed class statistics since the number of positive lables indicating summary-worthy sentences is far less than non summary-worthy sentences. In order to tackle this imbalance, one can set the class_weights parameter in config.py to be different than [1, 1].
 
 ### TODO
 - [ ] Test data
