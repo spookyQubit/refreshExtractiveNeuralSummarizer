@@ -1,6 +1,6 @@
 ## Extractive summarization
 
-This is an unofficial pytorch implementation of [Refresh: Ranking Sentences for Extractive Summarization with Reinforcement Learning](https://arxiv.org/pdf/1802.08636.pdf). The original code implementation in tensorflow can be found in [EdinburghNLP/Refresh](https://github.com/EdinburghNLP/Refresh).
+This is an unofficial pytorch implementation of [Refresh: Ranking Sentences for Extractive Summarization with Reinforcement Learning](https://arxiv.org/pdf/1802.08636.pdf). The original code implementation in tensorflow can be found at [EdinburghNLP/Refresh](https://github.com/EdinburghNLP/Refresh).
 
 
 To run, follow the instructions in [EdinburghNLP/Refresh](https://github.com/EdinburghNLP/Refresh) to download the dataset. All the hyperparameters can be set in config.py. The code has been tested only with the CNN dataset. 
@@ -14,7 +14,7 @@ AMI: Deep Learning AMI (Ubuntu) Version 9.0.
 Env: pytorch_p36 (source activate pytorch_p36)
 ```
 
-The nature of the sentence extraction task involves higly skewed class statistics since the number of positive lables indicating summary-worthy sentences is far less than non summary-worthy sentences. In order to tackle this imbalance, one can set the class_weights parameter in config.py to be different than [1, 1].
+The cross_entropy loss class_weights in the original implementation were implicitly set to [1, 1]. However, the nature of the sentence extraction task involves highly skewed class statistics because the number of positive lables are rare, indicating summary-worthy sentences are far less frequent than non summary-worthy sentences. To account for this class imbalance, I changed the weight parameter in F.cross_entropy (set in class_weights parameter in config.py) to be different than [1, 1].
 
 ### TODO
 - [ ] Test data
