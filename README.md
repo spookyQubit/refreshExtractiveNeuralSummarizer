@@ -3,7 +3,7 @@ Extractive summarization is a task of selecting the most summary-worthy sentence
 
 Traditionally, extracting sentences were carried out using graph based or count based techniques such as TextRank, LexRank and SumBasic. Now, neural network architectures, powered by curated large scale datasets needed to train them, have empirically pushed the state-of-the-art baselines on many NLP tasks including extractive summarization.
 
-This repo is my attempt to learn more about this fascinating area of summarization than just reading research papers. Also, it is an opportunity to sharpen my pytorch skills.  
+This repo is my attempt to learn more about this important area of summarization than just reading research papers. Also, it is an opportunity to sharpen my pytorch skills.  
 
 ### Refresh
 This is an unofficial pytorch implementation of [Refresh: Ranking Sentences for Extractive Summarization with Reinforcement Learning](https://arxiv.org/pdf/1802.08636.pdf). The original code implementation in tensorflow can be found at [EdinburghNLP/Refresh](https://github.com/EdinburghNLP/Refresh).
