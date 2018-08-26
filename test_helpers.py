@@ -6,7 +6,7 @@ import numpy as np
 
 
 """
-This file contains snippets whcih were used during development.
+This file contains snippets which were used during development.
 The code here is not needed/integrated in any way for any functionality of the final model.
 """
 
