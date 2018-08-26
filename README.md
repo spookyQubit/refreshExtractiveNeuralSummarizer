@@ -7,7 +7,7 @@ To run, follow the instructions in [EdinburghNLP/Refresh](https://github.com/Edi
 ```
 Running the code: python main.py
 ```
-To run the full experiment for 20 epochs, I used the following AWS credentials:
+To run the full experiment for 20 epochs (which takes around 12 hours, similar to the tensorflow implementation), I used the following AWS credentials:
 ```
 Instance: g3.4xlarge 
 AMI: Deep Learning AMI (Ubuntu) Version 9.0. 
