@@ -1,5 +1,5 @@
 ## Extractive summarization
-Extractive summarization is a task of selecting the most summary-worthy sentences from a document. This differs from abstractive summarization where the summary is paraphrased and not extracted verbatim. Even in many abstractive summarization, extracting relevant sentences is an intermediary step before paraphrasing, thus highlighting the importance of the extractive task.
+Extractive summarization is a task of selecting the most summary-worthy sentences from a document. This differs from abstractive summarization where the summary is paraphrased and not extracted verbatim. Even in many abstractive summarization methods, extracting relevant sentences is an intermediary step before paraphrasing, thus highlighting the importance of the extractive task.
 
 Traditionally, extracting sentences were carried out using graph based or count based techniques such as TextRank, LexRank and SumBasic. Now, neural network architectures, powered by curated large scale datasets needed to train them, have empirically pushed the state-of-the-art baselines on many NLP tasks including extractive summarization.
 
