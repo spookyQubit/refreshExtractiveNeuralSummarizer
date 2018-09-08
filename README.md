@@ -22,6 +22,7 @@ Env: pytorch_p36 (source activate pytorch_p36)
 
 The cross_entropy loss class_weights in the original implementation were implicitly set to [1, 1]. However, the nature of the sentence extraction task involves highly skewed class statistics because the number of positive lables are rare, indicating summary-worthy sentences are far less frequent than non summary-worthy sentences. To account for this class imbalance, I changed the weight parameter in F.cross_entropy (set in class_weights parameter in config.py) to be different than [1, 1].
 
+
 ### TODO
 - [ ] Test data
 - [ ] Embedding requires_grad=False except for UNK.
